@@ -1,0 +1,29 @@
+.actor-card {
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(0, 0%, 100%, 0.15);
+    box-shadow:
+            0px 1px 1px 0px hsla(0,0%,0%,0.14),
+            0px 2px 1px -1px hsla(0,0%,0%,0.12),
+            0px 1px 3px 0px hsla(0,0%,0%,0.2);
+    border-radius: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 20rem;
+}
+
+.actor-card img {
+    border-radius: 0.5rem;
+    width: 10rem;
+    margin-bottom: 0.5rem;
+    aspect-ratio: 2/3;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.actor-name {
+    margin: 0.25rem 0.5rem 0 0.5rem;
+}
+
+.character {
+    margin: 0.25rem 0.5rem 0 0.5rem;
+    font-size: 0.85rem;
+}

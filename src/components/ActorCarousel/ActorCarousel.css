@@ -1,0 +1,15 @@
+.actors::-webkit-scrollbar {
+    display: none;
+}
+
+.actors {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    width: calc(100%);
+    height: 100%;
+    gap: 1rem;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

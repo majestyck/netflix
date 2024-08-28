@@ -1,0 +1,18 @@
+.slideshow {
+    display: flex;
+    gap: 1rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: -1.5rem;
+    padding: 1.5rem;
+    overflow-x: scroll;
+
+}
+
+.slideshow::-webkit-scrollbar {
+    display: none;
+}
+
+.slideshow-container {
+    margin-bottom: 2rem;
+}

@@ -1,7 +1,7 @@
 import { ReactElement, useState } from "react";
-import "./MediaCard.css";
 import { useNavigate } from "react-router-dom";
 import { IMAGE_URL_PREFIX_LOW, MISSING_MOVIE_IMG_URL } from "src/utils/constants.ts";
+import "./MediaCard.css";
 
 export type MediaCardProps = {
     id: number;
@@ -10,10 +10,10 @@ export type MediaCardProps = {
     description: string;
     year: number;
     note: number;
-    isMovie: boolean;
+    isMovie?: boolean;
 }
 
-const MediaCard = ({id, imgUrl, title, description, note, year, isMovie}: MediaCardProps): ReactElement => {
+const MediaCard = ({id, imgUrl, title, description, note, year, isMovie = false}: MediaCardProps): ReactElement => {
 
     const [infoVisible, setInfoVisible] = useState(false);
 
@@ -30,7 +30,7 @@ const MediaCard = ({id, imgUrl, title, description, note, year, isMovie}: MediaC
             onMouseLeave={() => setInfoVisible(false)}
         >
             {infoVisible && <div className="media-info">
-                <p>{year} · {note.toPrecision(2)} ⭐️</p>
+                <p><span>{year}</span> · <span>{note.toPrecision(3)}</span> <span>⭐️</span></p>
                 <h2>{title}</h2>
                 <p>{description}</p>
                 <button onClick={openDetails}>See more →</button>

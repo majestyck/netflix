@@ -4,7 +4,7 @@ import { IMAGE_URL_PREFIX_LOW, MISSING_PHOTO_URL } from "src/utils/constants.ts"
 
 type ActorCardProps = {
     name: string;
-    imgSource: string;
+    imgSource?: string;
     character: string;
 }
 

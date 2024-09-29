@@ -17,6 +17,8 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
+    "types": ["@testing-library/jest-dom", "vitest/globals"],
+
 
     /* Linting */
     "strict": true,
@@ -24,5 +26,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": ["src/**/*", "setupTests.ts"]
 }

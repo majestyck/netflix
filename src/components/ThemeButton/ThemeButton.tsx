@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import "./ThemeButton.css";
-import { useTheme } from "src/providers/ThemeContext";
+import { useTheme } from "src/context/ThemeContext";
 
 const ThemeButton = (): ReactElement => {
 

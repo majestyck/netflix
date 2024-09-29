@@ -1,15 +1,15 @@
 import { fireEvent, screen, waitFor } from "@testing-library/react";
-import '@testing-library/jest-dom';
-import { renderWithProviders } from "src/providers/provider-test-utils";
+import { renderWithProviders } from 'src/test/provider-test-utils';
+
 import { NavBar } from './NavBar';
 import * as router from 'react-router';
 
 describe("NavBar component testing", () => {
 
-    const mockedNavigation = jest.fn();
+    const mockedNavigation = vi.fn();
 
     beforeEach(() => {
-        jest.spyOn(router, 'useNavigate').mockImplementation(() => mockedNavigation);
+        vi.spyOn(router, 'useNavigate').mockImplementation(() => mockedNavigation);
     });
 
     it("should render correctly", () => {

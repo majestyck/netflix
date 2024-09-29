@@ -6,7 +6,7 @@ import Home from "src/pages/Home/Home.tsx";
 import { NavBar } from "src/components/NavBar/NavBar.tsx";
 import Movie from "src/pages/Movie/Movie.tsx";
 import Show from "src/pages/Show/Show.tsx";
-import { useTheme } from "src/providers/ThemeContext";
+import { useTheme } from "src/context/ThemeContext";
 
 function App() {
 

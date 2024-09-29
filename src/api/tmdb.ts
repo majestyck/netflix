@@ -1,6 +1,6 @@
+import { ACCESS_TOKEN } from "src/api/constants";
 import { Movie, Show, TmdbPageResponse } from "src/types";
 
-const ACCESS_TOKEN = import.meta.env.VITE_TMDB_ACCESS_TOKEN;
 const headers = {
     accept: 'application/json',
     Authorization: `Bearer ${ACCESS_TOKEN}`

@@ -1,6 +1,7 @@
 import { fireEvent, screen, within } from "@testing-library/react";
-import { renderWithProviders } from "src/providers/provider-test-utils";
-import ThemeButton from './ThemeButton';
+import ThemeButton from "src/components/ThemeButton/ThemeButton";
+import { renderWithProviders } from 'src/test/provider-test-utils';
+
 
 describe("ThemeButton component testing", () => {
 
@@ -10,10 +11,10 @@ describe("ThemeButton component testing", () => {
         const button = screen.getByRole('button');
         const img = within(button).getByRole('img');
 
-        expect(img).toHaveAttribute('src', expect.stringContaining('moon'));
+        expect(img).toHaveAttribute('src', '/src/assets/sun.svg');
 
         fireEvent.click(button);
 
-        expect(img).toHaveAttribute('src', expect.stringContaining('sun'));
+        expect(img).toHaveAttribute('src', '/src/assets/moon.svg');
     });
 });

@@ -93,7 +93,6 @@ export type Season = {
     vote_average: number;
 }
 
-export type Language = "fr"
 export type Genre = {
     id: number;
     name: string;
